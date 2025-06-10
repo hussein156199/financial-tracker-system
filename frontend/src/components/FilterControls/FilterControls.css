@@ -1,0 +1,118 @@
+/* src/components/FilterControls/FilterControls.css */
+.filter-controls {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+  }
+  
+  .filter-controls h3 {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+    font-size: 1.3rem;
+  }
+  
+  .filter-row {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .filter-group {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #34495e;
+    font-size: 0.9rem;
+  }
+  
+  .date-range {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .date-range input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  .date-range span {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    padding: 0 0.5rem;
+  }
+  
+  .filter-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    background-color: white;
+  }
+  
+  .filter-btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    height: fit-content;
+  }
+  
+  .filter-btn:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-row {
+      flex-direction: column;
+      gap: 1rem;
+    }
+    
+    .filter-group {
+      width: 100%;
+    }
+    
+    .filter-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  .category-select {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 200px;
+    outline: none;
+  }
+  
+  .category-select:hover {
+    border-color: #007bff;
+  }
+  
+  .category-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+  }
